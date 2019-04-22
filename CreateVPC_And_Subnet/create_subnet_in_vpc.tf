@@ -15,11 +15,11 @@ variable "network_offering" {}
 variable "subnet_name" {}
 variable "subnet_cidr" {}
 variable "subnet_desc" {}
-variable "instance_template" {}
+/* variable "instance_template" {}
 variable "instance_type" {}
 variable "instance_name" {}
 variable "instance_display_name" {}
-variable "instance_root_disk_size" {}
+variable "instance_root_disk_size" {} */
 
 # Configure the CloudStack Provider
 provider "cloudstack" {
@@ -62,16 +62,4 @@ resource "cloudstack_network" "veetu-subnet-1" {
     network_offering = "${var.network_offering}"
     zone = "VeetuZone"
     vpc_id= "${cloudstack_vpc.default.id}"
-}
-
-#Setup an instance within the subnet 
-resource "cloudstack_instance" "Host-I" {
-  name             = "${var.instance_name}"
-  display_name     = "${var.instance_display_name}"
-  service_offering = "${var.instance_type}"
-  network_id       = "${cloudstack_network.veetu-subnet-1.id}"
-  template         = "${var.instance_template}"
-  root_disk_size   = "${var.instance_root_disk_size}"
-  start_vm         = "false"
-  zone             = "VeetuZone"
 }
