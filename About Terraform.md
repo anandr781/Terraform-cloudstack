@@ -4,7 +4,7 @@ Written in GoLang and very easy to install .
 
 FILES
   * TF Executable
-  * TF File - (.tf and .tfvars)
+  * TF File - (.tf and .tfvars or )
   * TF State file
  
 COMPONENTS 
@@ -13,6 +13,6 @@ COMPONENTS
   * Resource - Target Resource within that Provider that needs to be provisioned ("aws_instance") . 
       * connection 
       * provisioner (For example - "remote-exec
-  * Output - Outputs emitted by Terraform as a result of a provisioning action. 
+  * Output - Output emitted by Terraform as a result of a provisioning action. 
     
  
