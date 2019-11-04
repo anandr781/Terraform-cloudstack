@@ -35,5 +35,7 @@ Written in GoLang and very easy to install .
   ### OBJECTIVE - AUTOMATING DEPLOYMENT 
     | Provisioning Resources | Planning Updates | Use Source Control or IaC | Reusing Templates 
     
+  ### Terraform Configuration File (.terraformrc file)
+  [Details](https://www.terraform.io/docs/commands/cli-config.html)
     
  
