@@ -39,8 +39,8 @@ Written in GoLang and very easy to install .
     | Provisioning Resources | Planning Updates | Use Source Control or IaC | Reusing Templates 
     
 ----------------------------------------------------------------------------------------------------------------------------
-
-## I. Planning Updates  
+[#1589F0] 
+## I. Planning Updates  '#1589F0' 
   ### I.i.Terraform State File 
   * JSON Format (Do not edit the file ever) 
   * Within the file - __resource mappings and metadata__ 
