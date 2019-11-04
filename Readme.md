@@ -12,7 +12,7 @@ Scripts that are security related can also be seperated since they might have a 
 
 
 
-============================================================================
+============================================================================================================================
 
 # TERRAFORM 
 Written in GoLang and very easy to install . 
@@ -38,7 +38,7 @@ Written in GoLang and very easy to install .
   ### OBJECTIVE - AUTOMATING DEPLOYMENT 
     | Provisioning Resources | Planning Updates | Use Source Control or IaC | Reusing Templates 
     
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+----------------------------------------------------------------------------------------------------------------------------
 
 ## I. Planning Updates  
   ### I.i.Terraform State File 
