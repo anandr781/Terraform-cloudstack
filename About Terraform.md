@@ -13,6 +13,6 @@ COMPONENTS
   * Resource - Target Resource within that Provider that needs to be provisioned ("aws_instance") . 
       * connection 
       * provisioner (For example - "remote-exec
-  * Outputs - Outputs emitted by Terraform as a result of a provisioning action. 
+  * Output - Outputs emitted by Terraform as a result of a provisioning action. 
     
  
