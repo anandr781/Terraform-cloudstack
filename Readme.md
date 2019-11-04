@@ -18,26 +18,27 @@ Scripts that are security related can also be seperated since they might have a 
 Written in GoLang and very easy to install . 
 
 ### FILES
-  * TF Executable
-  * TF File - (.tf and .tfvars or any other .tf* it might spot in the executing directory )
-  * TF State file
+   * TF Executable
+   * TF File - (.tf and .tfvars or any other .tf* it might spot in the executing directory )
+   * TF State file
  
- For Load order Hashicorp states : "When invoking any command that loads the Terraform configuration, Terraform loads all configuration files within the directory specified in alphabetical order."
+   For Load order Hashicorp states : "When invoking any command that loads the Terraform configuration, Terraform loads all configuration files within the directory specified in alphabetical order."
  
 ### COMPONENTS 
-  * Variables - Seperates Code from actual values ,  helps as a placeholder , environment wise differing values (Dev/QA/Prod)
-  * Provider - Target Technology or Platform Stack ("aws") 
-  * Resource - Target Resource within that Provider that needs to be provisioned ("aws_instance") . 
-      * connection 
-      * provisioner (For example - "remote-exec
-  * Output - Output emitted by Terraform as a result of a provisioning action. 
+   * Variables - Seperates Code from actual values ,  helps as a placeholder , environment wise differing values (Dev/QA/Prod)
+   * Provider - Target Technology or Platform Stack ("aws") 
+   * Resource - Target Resource within that Provider that needs to be provisioned ("aws_instance") . 
+       * connection 
+       * provisioner (For example - "remote-exec
+   * Output - Output emitted by Terraform as a result of a provisioning action. 
   
-    ### Terraform Configuration File (.terraformrc file)
+### Terraform Configuration File (.terraformrc file)
   [Details](https://www.terraform.io/docs/commands/cli-config.html)
   
   ### OBJECTIVE - AUTOMATING DEPLOYMENT 
     | Provisioning Resources | Planning Updates | Use Source Control or IaC | Reusing Templates 
     
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ## I. Planning Updates  
   ### I.i.Terraform State File 
