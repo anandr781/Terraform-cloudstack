@@ -32,10 +32,21 @@ Written in GoLang and very easy to install .
       * provisioner (For example - "remote-exec
   * Output - Output emitted by Terraform as a result of a provisioning action. 
   
+    ### Terraform Configuration File (.terraformrc file)
+  [Details](https://www.terraform.io/docs/commands/cli-config.html)
+  
   ### OBJECTIVE - AUTOMATING DEPLOYMENT 
     | Provisioning Resources | Planning Updates | Use Source Control or IaC | Reusing Templates 
     
-  ### Terraform Configuration File (.terraformrc file)
-  [Details](https://www.terraform.io/docs/commands/cli-config.html)
+
+## I. Planning Updates  
+  ### I.i.Terraform State File 
+  * JSON Format (Do not edit the file ever) 
+  * Within the file - __resource mappings and metadata__ 
+  * Represents a __Resource Tree / Dependency Tree__ (this helps TF orchestrate across providers) - For ex., A DNS address of a ALB is available only after AWS creates the resource during execution and these kind of run-time info gets persisted in state file.
+  * This __Resource Tree__ enables TF to work across muliple providers. 
+  * Making updates to configuration - State file gets __locked__ , very useful when multiple people or process (like Jenkins) on the same infrastructure and when the __stated is stored remotely__.
+  * State is stored locally or __remotely (ex., NFS, Consul , S3 bucket)__ . As long as all process/people working with the state can reach the location it should be fine. 
+  
     
  
