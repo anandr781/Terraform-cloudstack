@@ -40,7 +40,7 @@ Written in GoLang and very easy to install .
     
 ----------------------------------------------------------------------------------------------------------------------------
 
-## I. __Planning Updates__   
+## I. Planning Updates
   ### I.i.Terraform State File 
   * JSON Format (Do not edit the file ever) 
   * Within the file - __resource mappings and metadata__ 
