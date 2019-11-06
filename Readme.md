@@ -5,7 +5,7 @@ This project helps in codifying the network infrastructure and the instance prov
 
 ### Design Objectives
 ### Seperation of Scripts by concerns : 
-Seperate TF scripts by rate of change (those that run once and those that run more than once) . For example, set up of VPC/Subnet happens one time, instance provisioning can happen a few times, but application deployments can happen numerous times . 
+Seperate TF scripts by __rate of change__ (those that run once and those that run more than once) . For example, set up of VPC/Subnet happens one time, instance provisioning can happen a few times, but application deployments can happen numerous times . 
 
 Scripts that are security related can also be seperated since they might have a different rate of change than provisioning. 
 
@@ -25,13 +25,13 @@ Written in GoLang and very easy to install .
    For Load order Hashicorp states : "When invoking any command that loads the Terraform configuration, Terraform loads all configuration files within the directory specified in alphabetical order."
  
 ### COMPONENTS 
-   * Variables - Seperates Code from actual values ,  helps as a placeholder , environment wise differing values (Dev/QA/Prod)
-   * Provider - Target Technology or Platform Stack ("aws") 
-   * Resource - Target Resource within that Provider that needs to be provisioned ("aws_instance") . 
+   * __Variables__ - Seperates Code from actual values ,  helps as a placeholder , environment wise differing values (Dev/QA/Prod)
+   * __Provider__ - Target Technology or Platform Stack ("aws") 
+   * __Resource__ - Target Resource within that Provider that needs to be provisioned ("aws_instance") . 
        * connection 
        * provisioner (For example - "remote-exec
-   * Output - Output emitted by Terraform as a result of a provisioning action. 
-  
+   * __Output__ - Output emitted by Terraform as a result of a provisioning action. 
+   * __Data__ - Data performs metadata lookups on provisioners (For ex., "aws_availability_zones" for AWS provider) 
 ### Terraform Configuration File (.terraformrc file)
   [Details](https://www.terraform.io/docs/commands/cli-config.html)
   
