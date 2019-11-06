@@ -49,5 +49,11 @@ Written in GoLang and very easy to install .
   * Making updates to configuration - State file gets __locked__ , very useful when multiple people or process (like Jenkins) on the same infrastructure and when the __stated is stored remotely__.
   * State is stored locally or __remotely (ex., NFS, Consul , S3 bucket)__ . As long as all process/people working with the state can reach the location it should be fine. 
   
+ ### I.ii. Terraform Planning 
+ * Inspects Terraform state - What is the current state of the enviroment. It might refresh the state as needed. 
+ * Based on what is already configured, what is configuration submitted looking at these it builds a __Dependency Graph__ aka __Dependency Tree__ (For ex., subnet needs to be created only after VPC) . 
+ * It will determine additions and deletions and presents that info back to the user .
+ * Terraform then "walks the line" as per the plan that is displayed .
+ 
     
  
