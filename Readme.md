@@ -53,7 +53,7 @@ Written in GoLang and very easy to install .
  * Inspects Terraform state - What is the current state of the enviroment. It might refresh the state as needed. 
  * Based on what is already configured, what is configuration submitted looking at these it builds a __Dependency Graph__ aka __Dependency Tree__ (For ex., subnet needs to be created only after VPC) . 
  * It will determine additions and deletions and presents that info back to the user .
- * Terraform then "walks the line" as per the plan that is displayed .
+ * Terraform then "walks the line" as per the plan that was displayed .
  
     
  
